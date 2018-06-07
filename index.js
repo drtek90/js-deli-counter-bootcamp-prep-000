@@ -23,9 +23,9 @@ function currentLine(line){
     if (line.length>0){
       var lines = [];
       for (var i=1;i<=line.length;i++){
-        lines[i-1] = `${i}. ${line[i-1]}`;
+        lines[i-1] = ` ${i}. ${line[i-1]}`;
       }
-    return `The line is currently:  ${lines}.`;
+    return `The line is currently:${lines}.`;
   }
   return 'The line is currently empty.'
 }
