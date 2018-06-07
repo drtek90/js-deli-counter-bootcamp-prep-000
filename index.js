@@ -22,7 +22,7 @@ function nowServing(line){
 function currentLine(line){
     if (line.length>0){
       for (var i=1;i<=line.length;i++){
-       var lines = [...lines,`${i}. ${line[i-1]}`];
+        lines[i-1] = `${i}. ${line[i-1]}`;
       }
     return `The line is currently:  ${lines}.`;
   }
